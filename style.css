@@ -132,8 +132,8 @@ h1 {
         display: grid;
     }
 
-    section {
-        max-width: 100%;
+    nav {
+        min-width: 100%;
         position: fixed;
     }
 
