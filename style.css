@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2? family= Bungee+Spice & family= Josefin+Sans:wght@300;400;500;700 & display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bungee Spice', 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0c0c0c;
+}
+
+.txt-logo {
+    background-color: #FFBB00;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    gap: 2px;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+
+#img-logo {
+    width: 5%;
+    display: flex;
+    margin-left: 15px;
+    padding-left: 1%;
+}
+
+.container-buttons {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    margin-top: 20px;
+    width: 117px;
+    background-color: #007a33f7;
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+button:active {
+    opacity: 0.3;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    gap: 40px;
+    justify-content: center;
+}
+
+li {
+    border: solid 2px #FFBB00;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+p {
+    color: aliceblue;
+    font-weight: 700;
+    padding: 3px;
+}
+
+#i {
+    height: 136.5px;
+}
+
+#p {
+    font-weight: 700;
+    color: #007a33f7;
+    cursor: pointer;
+}
+
+#p1 {
+    font-weight: 700;
+    color: #007a33f7;
+    padding-left: 25%;
+}
+
+h1 {
+    padding: 3px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+#p2 {
+    padding-left: 17%;
+    font-weight: 700;
+    color: #007a33f7;
+    cursor: pointer;
+}
+
+#p3 {
+    padding-left: 5%;
+    font-weight: 700;
+    color: #007a33f7;
+    cursor: pointer;
+}
+
+#p4 {
+    padding-left: 5%;
+    font-weight: 700;
+    color: #007a33f7;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        display: grid;
+    }
+
+    section {
+        max-width: 100%;
+        position: fixed;
+    }
+
+    .txt-logo {
+        height: 50px;
+        display: inline-flex;
+        margin-bottom: 30px;
+    }
+
+    #img-logo {
+        width: 8%;
+        margin-left: 8px;
+    }
+
+    .container-buttons {
+        margin: 30px 40px;
+        display: inline-flex;
+    }
+
+    button {
+        width: 90px;
+        font-size: 12px;
+    }
+
+    #p {
+        padding-left: 2%;
+        font-size: 13px;
+    }
+
+    #p1 {
+        padding-left: 7%;
+        font-size: 14px;
+    }
+
+    #p2 {
+        padding-left: 10%;
+        font-size: 12px;
+    }
+
+    #p3 {
+        padding: 1%;
+        font-size: 12px;
+    }
+
+    #p4 {
+        padding: 1%;
+        font-size: 12px;
+    }
+
+    h1 {
+        padding: 3px;
+        padding-right: 0;
+        font-size: 14px;
+    }
+
+    li {
+        display: grid;
+        font-size: 13px;
+    }
+
+    ul {
+        padding-top: 20%;
+        grid-template-columns: 150px 150px;
+        grid-row: auto;
+    }
+}
