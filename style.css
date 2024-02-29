@@ -5,33 +5,35 @@
     font-family: 'Bungee Spice', 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
+    font-weight: 700;
 }
 
 body {
     background-color: #0c0c0c;
+    max-height: 100vh;
+}
+
+header {
+    background-color: #FFBB00;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .txt-logo {
-    background-color: #FFBB00;
-    width: 100%;
-    height: 60px;
-    align-items: center;
     display: flex;
-    text-align: center;
-    gap: 2px;
-    margin-bottom: 50px;
-    font-size: 17px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
 }
 
 #img-logo {
-    width: 5%;
-    display: flex;
-    margin-left: 15px;
-    padding-left: 1%;
+    width: 4%;
+    margin-left: -50px;
 }
 
 .container-buttons {
-    margin: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,12 +44,11 @@ button {
     margin-top: 20px;
     width: 117px;
     background-color: #007a33f7;
+    color: aliceblue;
     border-radius: 5px;
     border: none;
-    color: aliceblue;
     padding: 10px;
     cursor: pointer;
-    font-weight: 700;
 }
 
 button:hover {
@@ -80,8 +81,6 @@ img {
 
 p {
     color: aliceblue;
-    font-weight: 700;
-    padding: 3px;
 }
 
 #i {
@@ -89,104 +88,107 @@ p {
 }
 
 #p {
-    font-weight: 700;
+    color: #007a33f7;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.p {
+    position: absolute;
+    left: 100px;
     color: #007a33f7;
     cursor: pointer;
 }
 
 #p1 {
-    font-weight: 700;
+    padding-left: 300px;
     color: #007a33f7;
-    padding-left: 25%;
+    cursor: pointer;
 }
 
 h1 {
-    padding: 3px;
-    font-weight: 700;
+    color: aliceblue;
+}
+
+b {
     color: aliceblue;
 }
 
 #p2 {
-    padding-left: 17%;
-    font-weight: 700;
+    padding-left: 50px;
     color: #007a33f7;
     cursor: pointer;
 }
 
 #p3 {
-    padding-left: 5%;
-    font-weight: 700;
     color: #007a33f7;
     cursor: pointer;
 }
 
 #p4 {
-    padding-left: 5%;
-    font-weight: 700;
     color: #007a33f7;
     cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
-    body {
-        display: grid;
-    }
+@media screen and (max-width: 600px) {
 
-    nav {
-        min-width: 100%;
+    header {
         position: fixed;
+        height: 50px;
+        max-width: 100Vh;
     }
 
     .txt-logo {
-        height: 50px;
-        display: inline-flex;
-        margin-bottom: 30px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3px;
     }
 
     #img-logo {
-        width: 8%;
-        margin-left: 8px;
+        width: 7%;
+        margin-left: 10px;
     }
 
     .container-buttons {
-        margin: 30px 40px;
-        display: inline-flex;
+        gap: 10px;
     }
 
     button {
-        width: 90px;
+        width: 85px;
+        font-size: 12px;
+    }
+
+    .p {
+        display: contents;
+        color: #007a33f7;
+        cursor: pointer;
         font-size: 12px;
     }
 
     #p {
-        padding-left: 2%;
         font-size: 13px;
+        margin: 5px 0;
     }
 
     #p1 {
-        padding-left: 7%;
-        font-size: 14px;
+        padding-left: 0;
+        font-size: 15px;
     }
 
     #p2 {
-        padding-left: 10%;
+        padding-left: 0;
         font-size: 12px;
     }
 
     #p3 {
-        padding: 1%;
         font-size: 12px;
     }
 
     #p4 {
-        padding: 1%;
         font-size: 12px;
-    }
-
-    h1 {
-        padding: 3px;
-        padding-right: 0;
-        font-size: 14px;
+        margin-right: 10px;
     }
 
     li {
@@ -197,6 +199,31 @@ h1 {
     ul {
         padding-top: 20%;
         grid-template-columns: 150px 150px;
-        grid-row: auto;
+        margin-bottom: 10%;
     }
+}
+
+@media screen and (max-width: 380px) {
+
+    .txt-logo {
+        gap: 10px;
+    }
+
+    .p {
+        display: none;
+    }
+
+    button {
+        width: 65px;
+        font-size: 10px;
+    }
+
+    .container-buttons {
+        gap: 10px;
+    }
+
+    ul {
+        grid-template-columns: 150px;
+    }
+
 }
